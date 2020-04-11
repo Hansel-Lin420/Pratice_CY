@@ -10,27 +10,25 @@ public class Primer {
 			for (int i = 2; i <= n / 2; i++) {
 				if (prime(i) && prime(n - i)) {
 					System.out.println(n + "=" + i + "+" + (n - i));
+					break;
 				}
 			}
 
+		}
 
 	}
-
-}
 
 	private static boolean prime(int n) {
 		// TODO Auto-generated method stub
 		boolean flag = true;
-		if (n == 2 || n == 3) {
 
-		} else {
-			for (int i = 2; i <= Math.sqrt(n); i++) {
-				if (n % i == 0) {
-					flag = false;
-					break;
-				}
+		for (int i = 2; i <= Math.sqrt(n); i++) {
+			if (n % i == 0) {
+				flag = false;
+				break;
 			}
 		}
+
 		return flag;
 	}
-	}
+}
