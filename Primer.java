@@ -6,7 +6,7 @@ public class Primer {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();
-		if (n >= 4 && n <= 1000) {
+		if (n >= 4 && n <= 10000) {
 			for (int i = 2; i <= n / 2; i++) {
 				if (prime(i) && prime(n - i)) {
 					System.out.println(n + "=" + i + "+" + (n - i));
@@ -25,7 +25,7 @@ public class Primer {
 		for (int i = 2; i <= Math.sqrt(n); i++) {
 			if (n % i == 0) {
 				flag = false;
-				break;
+
 			}
 		}
 
