@@ -4,7 +4,7 @@ public class PrimerCheck {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 int limit = 100;
-for(int i =2; i < limit;i++) {
+for(int i =2; i <= limit;i++) {
 	if(isPrimer(i)) {
 		System.out.print(i+", ");
 	}

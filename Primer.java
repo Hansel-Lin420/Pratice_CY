@@ -25,7 +25,7 @@ public class Primer {
 		for (int i = 2; i <= Math.sqrt(n); i++) {
 			if (n % i == 0) {
 				flag = false;
-
+				break;
 			}
 		}
 
