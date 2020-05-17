@@ -3,11 +3,15 @@ import java.util.Scanner;
   
 public class test {  
   
-   public static void main(String[] args) throws Throwable {  
-       Scanner sc = new Scanner(new File("C:\\Users\\ASUS\\eclipse-workspace\\WeiFu_Java\\src\\Ex05.txt"), "UTF8");  
-       String inputStr = sc.useDelimiter("\\Z").next();  
-       sc.close();  
-  
-       System.out.println(inputStr);  
+   public static void main(String[] args)  {  
+     Scanner scn = new Scanner(System.in);
+     int n = scn.nextInt();
+     String str = "";
+     while(n>0) {
+    	 str = Integer.toString(n%2)+str;
+    	 n=n/2;
+     }
+     str = Integer.toString(n)+str;
+     System.out.printf("%08d\n", Integer.parseInt(str));
    }  
 }  
